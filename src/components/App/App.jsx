@@ -84,10 +84,12 @@ class App extends Component {
         images: [],
         isError: "Sorry, you didn't enter your search term, please try again"
       })
+      resetForm()
       return;
     }
 
     if (this.state.value === value) {
+      resetForm()
       return;
     }
 
